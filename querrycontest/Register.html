@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Register</title>
+<script type="text/javascript">
+function validate(temp)
+{
+		if(temp.name1.value=="" || temp.name2.value==""|| temp.username.value=="" || temp.password.value=="")
+		{	alert("Enter some value");
+			return false;
+		}
+	return true;
+}
+</script>
+
+</head>
+<body>
+	    <form action="./register.jsp" name="f1" method=post onsubmit="return validate(this)">
+		<table width="1000" border="0" cellpadding="10" cellspacing="0">
+		  <tr>
+	    <td width="1000" height="590" valign="top" >
+		<div id="Layer1" style="position:absolute; width:303px; height:20px; z-index:1; right: 1px; top: 280px;">
+     <table>
+	 <tr>
+	   <td><h2><b>REGISTER</b></h2><td>
+	   </tr>
+	<tr>
+       <td><b>Player1</b></td>
+       <td><input type=text name="name1"></td>
+       </tr>
+	   <tr>
+       <td><b>Player2</b></td>
+       <td><input type=text name="name2"></td>
+       </tr>
+	   <tr>
+       <td><b>UserName:</b></td>
+       <td><input type=text name="username"></td>
+       </tr>
+		<tr>
+	        <td><b>Password:</b></td>
+        	<td><input type=password name="password"></td>
+	      </tr>
+     </table>
+	     <br><input type=submit value="Register">
+     		
+	     </div></td>
+		  </tr>
+	</table>
+	</form>
+</body>
+</html>

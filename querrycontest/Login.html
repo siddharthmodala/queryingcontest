@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title >LOGIN PAGE</title>
+	<script type="text/javascript">
+	function validate(temp)
+	{
+		if(temp.username.value=="" || temp.password.value=="")
+		{
+			alert("Enter some value");
+			return false;
+		}
+		return true;
+	}
+	</script>
+</head>
+<body>
+<form method="post" action="login.jsp" onsubmit="return validate(this)">
+<table  width="1000" border="0" cellpadding="10" cellspacing="0">
+		  <tr>
+	    <td width="1000" height="530" valign="top" >
+		<div id="Layer1" style="position:absolute; width:303px; height:30px; z-index:1; right: 1px; top: 400px;">
+	<table align="center">
+	<tr>
+	<td><b>User Name:</b></td><td><input type="text" name="username"></td></tr>
+	<tr><td><b>Password:</b></td><td><input type="password" name="password"></td></tr>
+	<tr><td><input type="submit" name="submit" value="login"></td>
+	<td><input type="reset" name="reset" value="Reset" ></td></tr>
+	<tr><td align="center" colspan="2"><h3><a href="./Register.html">Register</a></h3></td></tr>
+	</table>
+	</div></td>
+		  </tr>
+	</table>
+	</form>
+	</body>
+</html>

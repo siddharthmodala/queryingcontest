@@ -1,0 +1,33 @@
+create table users(
+name1 varchar2(30),
+name2 varchar2(30),
+userid varchar2(30),
+password varchar2(3),
+primary key(userid)
+);
+
+
+create table quiz(
+qno number,
+question varchar2(1000),
+ans1 varchar2(1000),
+ans2 varchar2(1000),
+ans3 varchar2(1000),
+primary key(qno));
+
+create table scores(
+userid varchar(30),
+q1 number,
+q2 number,
+q3 number,
+q4 number,
+q5 number,
+q6 number,
+q7 number,
+q8 number,
+q9 number,
+q10 number,
+primary key(userid));
+
+insert into scores values('administrator',0,0,0,0,0,0,0,0,0,0);
+
